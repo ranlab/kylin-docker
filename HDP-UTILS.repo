@@ -1,6 +1,7 @@
-[HDP-UTILS-1.1.0.20]
-name=HDP-UTILS
-baseurl=http://public-repo-1.hortonworks.com/HDP-UTILS-1.1.0.20/repos/centos7
-path=/
+[HDP-UTILS-1.1.0.22]
+name=HDP-UTILS Version - HDP-UTILS-1.1.0.22
+baseurl=http://public-repo-1.hortonworks.com/HDP-UTILS-1.1.0.22/repos/centos7
+gpgcheck=1
+gpgkey=http://public-repo-1.hortonworks.com/HDP/centos7/3.x/updates/3.1.0.0/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
 enabled=1
-gpgcheck=0
+priority=1

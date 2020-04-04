@@ -1,7 +1,7 @@
-# Creates a kylin 1.5.2 + HDP 2.4 + Centos7 image
+# Creates a kylin 3.0.1 + HDP 3.1 + Centos8 image
 
-FROM centos:7
-MAINTAINER Kyligence Inc
+FROM centos:8
+LABEL maintainer="Ranlab Organization"
 
 USER root
 
@@ -28,17 +28,17 @@ RUN yum install -y hbase tez hadoop snappy snappy-devel hadoop-libhdfs ambari-lo
 RUN yum -y remove java*
 
 # java
-RUN curl -LO 'http://download.oracle.com/otn-pub/java/jdk/7u71-b14/jdk-7u71-linux-x64.rpm' -H 'Cookie: oraclelicense=accept-securebackup-cookie'
-RUN rpm -i jdk-7u71-linux-x64.rpm
-RUN rm jdk-7u71-linux-x64.rpm
+RUN curl -LO 'http://download.oracle.com/otn-pub/java/jdk/8u241-b07/jdk-8u241-linux-x64.rpm' -H 'Cookie: oraclelicense=accept-securebackup-cookie'
+RUN rpm -i jdk-8u241-linux-x64.rpmm
+RUN rm jdk-8u241-linux-x64.rpm
 
 ENV JAVA_HOME /usr/java/default
 ENV PATH $PATH:$JAVA_HOME/bin
 RUN rm /usr/bin/java && ln -s $JAVA_HOME/bin/java /usr/bin/java
 
-# kylin 1.5.2
-RUN curl -s https://www-us.apache.org/dist/kylin/apache-kylin-1.5.2.1/apache-kylin-1.5.2.1-HBase1.x-bin.tar.gz | tar -xz -C /usr/local/
-RUN cd /usr/local && ln -s ./apache-kylin-1.5.2.1-bin kylin
+# kylin 3.0.1
+RUN curl -s https://www.apache.org/dyn/closer.cgi/kylin/apache-kylin-3.0.1/apache-kylin-3.0.1-bin-hadoop3.tar.gz | tar -xz -C /usr/local/
+RUN cd /usr/local && ln -s ./apache-kylin-3.0.1-bin kylin
 ENV KYLIN_HOME /usr/local/kylin
 
 ADD ssh_config /root/.ssh/config

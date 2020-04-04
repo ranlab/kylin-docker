@@ -1,6 +1,7 @@
-[HDP-2.4]
-name=HDP
-baseurl=http://public-repo-1.hortonworks.com/HDP/centos7/2.x/updates/2.4.0.0
-path=/
+[HDP-3.1.0.0]
+name=HDP Version - HDP-3.1.0.0
+baseurl=http://public-repo-1.hortonworks.com/HDP/centos7/3.x/updates/3.1.0.0
+gpgcheck=1
+gpgkey=http://public-repo-1.hortonworks.com/HDP/centos7/3.x/updates/3.1.0.0/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
 enabled=1
-gpgcheck=0
+priority=1

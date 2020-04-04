@@ -6,9 +6,16 @@ hat als Basis den Branch kylin152-hdp24-centos7. In diesem Branch werden die nac
 Versionen in ein Docker-Image integriert
 
 * CentOS 8 als Basis
+* Kylin 3.0.1
 * Hadoop
 * Hive
 * HBase
 * Spark
-* JDK
+* Sqoop
+* JDK 8u241
 
+Nachfolgend werden einige Projekte noch einmal gestrennt vorgestellt.
+
+link:https://sqoop.apache.org/[Apache Sqoop]::
+	JDBC Datasources in Kylin + 
+	link:http://kylin.apache.org/docs/tutorial/setup_jdbc_datasource.html[Setup JDBC Data Source]
