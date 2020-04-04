@@ -1,0 +1,14 @@
+= kylin-docker =
+
+Dieses Repository baut ein Dockerimage für Apache Kylin.
+Es ist ein Fork von link:https://github.com/Kyligence/kylin-docker[Kyligence] und 
+hat als Basis den Branch kylin152-hdp24-centos7. In diesem Branch werden die nachfolgenden
+Versionen in ein Docker-Image integriert
+
+* CentOS 8 als Basis
+* Hadoop
+* Hive
+* HBase
+* Spark
+* JDK
+
