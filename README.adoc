@@ -19,3 +19,9 @@ Nachfolgend werden einige Projekte noch einmal gestrennt vorgestellt.
 link:https://sqoop.apache.org/[Apache Sqoop]::
 	JDBC Datasources in Kylin + 
 	link:http://kylin.apache.org/docs/tutorial/setup_jdbc_datasource.html[Setup JDBC Data Source]
+	
+link:https://docs.cloudera.com/HDPDocuments/[HDP Documentation]::
+	HDP ist ein Repository, das Coursera pflegt und für Hadoop gilt
+	
+== link:https://computingforgeeks.com/how-to-install-apache-hadoop-hbase-on-centos-7/[HBase on CentOS 7] ==	
+	
